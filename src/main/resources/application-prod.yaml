@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    platform: mysql
+    username: rootroot
+    password: rootroot
+    url: jdbc:mysql://mysql-database.c80pufxbwgyu.ap-south-1.rds.amazonaws.com:3306/user-management-backend?createDatabaseIfNotExist=true
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
