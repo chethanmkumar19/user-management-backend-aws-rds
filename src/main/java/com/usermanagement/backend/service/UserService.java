@@ -5,6 +5,7 @@ import com.usermanagement.backend.exception.GeneralRuntimeException;
 import com.usermanagement.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.List;
 
 @Service
@@ -47,4 +48,8 @@ public class UserService {
         return user;
     }
 
+    public String removeAllByIds(Collection<Long> ids) {
+        userRepository.deleteAllById(ids);
+        return "Users deleted successfully!";
+    }
 }
