@@ -1,7 +1,7 @@
 spring:
   datasource:
     platform: mysql
-    username: rootroot
+    username: root
     password: rootroot
     url: jdbc:mysql://mysql-database.c80pufxbwgyu.ap-south-1.rds.amazonaws.com:3306/user-management-backend?createDatabaseIfNotExist=true
     #driver-class-name: com.mysql.cj.jdbc.Driver
